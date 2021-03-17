@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<definition name="principal.prueba"
+		extends="base.definition">
+		<put-attribute name="titulo" value="Jsp de Prueba" />
+		<put-attribute name="body" value="/views/prueba.jsp" />
+	</definition>
+	<definition name="principal.alta" extends="base.definition">
+		<put-attribute name="titulo" value="" />
+		<put-attribute name="body"
+			value="/views/altaUsuario.jsp" />
+	</definition>
+	<definition name="principal.presenta"
+		extends="base.definition">
+		<put-attribute name="titulo" value="" />
+		<put-attribute name="body" value="/views/presentaUsuario.jsp" />
+	</definition>
+
+
+</tiles-definitions>  
